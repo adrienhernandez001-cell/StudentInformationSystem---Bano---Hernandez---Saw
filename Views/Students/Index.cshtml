@@ -1,0 +1,55 @@
+﻿@model List<StudentInformationSystem.Models.Student>
+
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h2 class="mb-4">Student List</h2>
+
+<a href="#" class="btn btn-success mb-3">
+    Add Student
+</a>
+
+<table class="table table-bordered table-striped">
+
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Student No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Course</th>
+            <th>Year</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var student in Model)
+        {
+            <tr>
+
+                <td>@student.Id</td>
+                <td>@student.StudentNumber</td>
+                <td>@student.FirstName</td>
+                <td>@student.LastName</td>
+                <td>@student.Course</td>
+                <td>@student.YearLevel</td>
+
+                <td>
+                    <button class="btn btn-primary btn-sm">
+                        Edit
+                    </button>
+
+                    <button class="btn btn-danger btn-sm">
+                        Delete
+                    </button>
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>
