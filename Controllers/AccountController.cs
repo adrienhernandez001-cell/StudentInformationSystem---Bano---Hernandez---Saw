@@ -24,9 +24,3 @@ namespace StudentInformationSystem.Controllers
         }
     }
 }
-        public IActionResult Index()
-        {
-            return View();
-        }
-    }
-}

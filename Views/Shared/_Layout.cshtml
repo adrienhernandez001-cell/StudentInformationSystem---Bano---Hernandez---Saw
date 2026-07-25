@@ -36,7 +36,7 @@
 
                 <a class="nav-link"
                    asp-controller="Home"
-                   asp-action="Privacy">
+                   asp-action="About">
                     About
                 </a>
 
@@ -60,6 +60,14 @@
     <script src="~/js/site.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">Student Information System</p>
+            <p class="mb-0">&copy; 2026</p>
+            <p class="mb-0">Developed by Group 3</p>
+        </div>
+    </footer>
 
 </body>
 </html>
